@@ -3,6 +3,7 @@ package com.kanak.practice;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,12 +19,12 @@ public class AddServlet extends HttpServlet{
 		int j=Integer.parseInt(req.getParameter("num2"));
 		int k=i+j;
 		
-		PrintWriter out=res.getWriter();
-		out.println(k);
-		/*req.setAttribute("k", k);
+		/*PrintWriter out=res.getWriter();
+		out.println(k);*/
 		
+	   // req.setAttribute("k", k);
 		RequestDispatcher rd=req.getRequestDispatcher("square");
-		rd.forward(req, res);*/
+		rd.forward(req, res);
 		}	
 	
 	}	

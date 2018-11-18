@@ -13,9 +13,9 @@ public class SqServlet extends HttpServlet{
 
 	public void doPost(HttpServletRequest req,HttpServletResponse res) throws IOException
 	{
-		int k=(int)req.getAttribute("k");
+		/*int k=(int)req.getAttribute("k");
 		
-		k=k*k;
+		k=k*k;*/
 		
 		PrintWriter out=res.getWriter();
 		out.println("hello from sq");

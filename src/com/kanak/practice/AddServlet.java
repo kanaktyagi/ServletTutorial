@@ -12,7 +12,7 @@ public class AddServlet extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
 
-	public void doGet(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException
+	public void service(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException
 	{
 		int i=Integer.parseInt(req.getParameter("num1"));
 		int j=Integer.parseInt(req.getParameter("num2"));
@@ -25,5 +25,6 @@ public class AddServlet extends HttpServlet{
 		RequestDispatcher rd=req.getRequestDispatcher("square");
 		rd.forward(req, res);*/
 		}	
+	
 	}	
 

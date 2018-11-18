@@ -12,7 +12,7 @@ public class AddServlet extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
 
-	public void service(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException
+	public void doPost(HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException
 	{
 		int i=Integer.parseInt(req.getParameter("num1"));
 		int j=Integer.parseInt(req.getParameter("num2"));

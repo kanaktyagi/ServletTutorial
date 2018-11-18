@@ -11,7 +11,7 @@ public class SqServlet extends HttpServlet{
 	
 	private static final long serialVersionUID = 1L;
 
-	public void service(HttpServletRequest req,HttpServletResponse res) throws IOException
+	public void doPost(HttpServletRequest req,HttpServletResponse res) throws IOException
 	{
 		int k=(int)req.getAttribute("k");
 		
